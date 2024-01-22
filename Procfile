@@ -1,1 +1,1 @@
-web: gunicorn timetopause.wsgi
+web: gunicorn time_to_pause_blog.wsgi
