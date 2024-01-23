@@ -8,8 +8,14 @@ class PostList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 4
 
-def get_base_html(request):
+def base(request):
     return render(request, '../templates/base.html')
 
-#def get_about_html(request):
-#    return render(request, '../templates/about.html')
+def about(request):
+    return render(request, '../templates/about.html')
+
+def blog(request):
+    return render(request, '../templates/blog.html')
+
+def home(request):
+    return render(request, '../templates/home.html')

@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from timetopause.views import get_base_html #get_about_html
+from timetopause.views import base, about, blog, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path('', get_base_html, name='get_base_html'),
-    #path('', get_about_html, name='get_about_html'),
+    path('', base, name='base'),
+    path('', about, name='about'),
+    path('', blog, name='blog'),
+    path('', home, name='home'),
 ]
