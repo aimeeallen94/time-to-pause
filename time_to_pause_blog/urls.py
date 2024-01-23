@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from timetopause.views import base, about, blog, home
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path('', base, name='base'),
-    path('', about, name='about'),
-    path('', blog, name='blog'),
+    path('base/', base, name='base'),
+    path('about/', about, name='about'),
+    path('blog/', blog, name='blog'),
     path('', home, name='home'),
 ]
