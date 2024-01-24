@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <script src="https://kit.fontawesome.com/4fda016be7.js" crossorigin="anonymous"></script>
     <title>Time to Pause Blog</title>
 </head>
@@ -15,7 +15,7 @@
     <h1>Time to Pause Blog</h1>
     <ul class="nav nav-tabs justify-content-end">
         <li class="nav-item">
-           <a class="nav-link" href="{% url 'base' %}">Home</a></li>
+           <a class="nav-link" href="{% url 'home' %}">Home</a></li>
         <li class="nav-item">
             <a class="nav-link" href="{% url 'about' %}">About</a></li>
         <li class="nav-item">

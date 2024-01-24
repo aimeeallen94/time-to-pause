@@ -21,8 +21,5 @@ from timetopause.views import base, about, blog, home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path('base/', base, name='base'),
-    path('about/', about, name='about'),
-    path('blog/', blog, name='blog'),
-    path('', home, name='home'),
+    path('', include('timetopause.urls'), name='timetopause_urls'),
 ]
