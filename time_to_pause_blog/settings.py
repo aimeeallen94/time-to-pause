@@ -90,8 +90,7 @@ WSGI_APPLICATION = 'time_to_pause_blog.wsgi.application'
 #}
 
 DATABASES = {
-    'default':
-dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default':dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
