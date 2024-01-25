@@ -8,13 +8,13 @@ class PostList(generic.ListView):
     paginate_by = 4
 
 def base(request):
-    return render(request, '../templates/base.html')
+    return render(request, 'timetopause/base.html')
 
 def about(request):
-    return render(request, '../templates/about.html')
+    return render(request, 'timetopause/about.html')
 
 def blog(request):
-    return render(request, '../templates/blog.html')
+    return render(request, 'timetopause/post_list.html')
 
 def home(request):
-    return render(request, '../templates/home.html')
+    return render(request, 'timetopause/home.html')
