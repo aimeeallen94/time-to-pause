@@ -3,3 +3,10 @@
 body {
     font-family: Josef-Sans, Roboto, sans-serif;
 }
+
+img {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+}

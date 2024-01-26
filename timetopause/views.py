@@ -10,8 +10,8 @@ class PostList(generic.ListView):
 def base(request):
     return render(request, 'timetopause/base.html')
 
-def about(request):
-    return render(request, 'timetopause/about.html')
+#def about(request):
+#    return render(request, 'about/about.html')
 
 def blog(request):
     return render(request, 'timetopause/post_list.html')
@@ -26,4 +26,4 @@ def post_detail(request, slug):
     """
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    return render(request, "timetopause/post_detail.html", ("post":post),)
+    return render(request, "timetopause/post_detail.html", {"post":post},)
