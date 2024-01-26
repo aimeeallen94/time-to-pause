@@ -2,9 +2,9 @@
 
     <main>
         <h1>{{ about.name }}</h1>
-        <div>{{ about.favourite_quote }}</div>
-        <div>{{ about.about_me }}</div>
-        <div>{{ about.why_i_started }}</div>
+        <div>{{ about.favourite_quote | safe }}</div>
+        <div>{{ about.my_story | safe }}</div>
+        <div>{{ about.why_i_started | safe }}</div>
         <div>{{ about.date_created }}</div>
     </main>
 
