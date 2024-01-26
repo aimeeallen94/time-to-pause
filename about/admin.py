@@ -4,4 +4,8 @@ from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
-admin.site.register(About)
+
+@admin.register(About)
+class AboutAdmin(SummernoteModelAdmin):
+
+    summernote_fields = ('my_story', 'favourite_quote', 'why_i_started',)
