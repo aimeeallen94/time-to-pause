@@ -2,10 +2,13 @@
 
     <main>
         <h1>{{ about.name }}</h1>
-        <div>{{ about.favourite_quote | safe }}</div>
-        <div>{{ about.my_story | safe }}</div>
-        <div>{{ about.why_i_started | safe }}</div>
+        <div><h5>A favourite quote of mine is.. </h5> {{ about.favourite_quote | safe }}</div>
+        <hr>
+        <div><h5>My Story: </h5> {{ about.my_story | safe }}</div>
+        <hr>
+        <div><h5>Why I started this blog </h5> {{ about.why_i_started | safe }}</div>
         <div>{{ about.date_created }}</div>
+        <hr>
     </main>
 
 {% endblock %}
