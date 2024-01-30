@@ -42,6 +42,11 @@
     </ul>
 
     <main>
+        {% if user.is_authenticated %}
+        <p>You are logged in as {{ user }}</p>
+        {% else %}
+        <p>You are not logged in</p>
+        {% endif %}
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
