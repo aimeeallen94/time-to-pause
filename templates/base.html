@@ -41,6 +41,21 @@
         {% endif %}
     </ul>
 
+    <!-- Displaying Django Message -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-success d-flex align-items-center" id="msg" role="alert">
+                    {{ message | safe }}
+                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                        <use xlink:href="#check-circle-fill"/></svg>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
     <main>
         {% if user.is_authenticated %}
         <p>You are logged in as {{ user }}</p>
