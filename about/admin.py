@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import About
+from .models import About, ClassBookingRequest
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
@@ -9,3 +9,8 @@ from django_summernote.admin import SummernoteModelAdmin
 class AboutAdmin(SummernoteModelAdmin):
 
     summernote_fields = ('my_story', 'favourite_quote', 'why_i_started',)
+
+@admin.register(ClassBookingRequest)
+class ClassBookingRequestAdmin(admin.ModelAdmin):
+
+    list_display = ('availability', 'read',)

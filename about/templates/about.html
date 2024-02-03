@@ -1,14 +1,41 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
 
     <main>
         <h1>{{ about.name }}</h1>
-        <div><h5>A favourite quote of mine is.. </h5> {{ about.favourite_quote | safe }}</div>
+        <div><h3>A favourite quote of mine is.. </h3> {{ about.favourite_quote | safe }}</div>
         <hr>
-        <div><h5>My Story: </h5> {{ about.my_story | safe }}</div>
+        <div><h3>My Story: </h3> {{ about.my_story | safe }}</div>
         <hr>
-        <div><h5>Why I started this blog </h5> {{ about.why_i_started | safe }}</div>
+        <div><h3>Why I started this blog </h3> {{ about.why_i_started | safe }}</div>
         <div>{{ about.date_created }}</div>
         <hr>
+
+        <div class="row">
+            <div class="col-12">
+                <h4>Would you like to learn more about mindfulness?</h4>
+                <p>At the Time to Pause Blog we feel very grateful to now be running mindfulness classes in response to such an
+                    interest in Mindfulness and a desire for our members to learn more.
+                    If this appeals to you also please fill out the form below to register your interest in attending the next
+                    mindfulness classes that we run. Please feel free to share times that would suit best for you whether it be 
+                    evenings, Saturdays, Sundays or if you would rather attend in person or online also.
+                    We will gather all requests and set up classes based on these requests.
+                </p>
+            </div>
+        </div>
+        <!-- Registering Interest Form -->
+        <div class="col-md-4 card mb-4 mt-3">
+            <div class="card-body">
+                <h5>Register Your Interest In Attending Our Next Mindfulness Classes</h5>
+                <form method="post">
+                    {{ class_booking_request_form | crispy }}
+                    {% csrf_token %}
+                    <button id="submitButton" type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
 
 {% endblock %}
