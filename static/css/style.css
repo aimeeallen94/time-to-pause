@@ -2,11 +2,34 @@
 
 body {
     font-family: Josef-Sans, Roboto, sans-serif;
+    color: #554640;
 }
 
 img {
     position: relative;
-    width: 50%;
-    height: 50%;
     overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.card-img-top {
+    width: 40%;
+    height: 50%;
+}
+
+.homepage-heading {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-text {
+    text-align: center;
 }

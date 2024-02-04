@@ -14,7 +14,7 @@
                                 {% if "placeholder" in post.featured_image.url  %}
                                 <img src="https://images.pexels.com/photos/355209/pexels-photo-355209.jpeg" alt="" class="card-img-top">
                                 {% else %}
-                                <img src="{{ post.featured_image.url }}" alt="">
+                                <img src="{{ post.featured_image.url }}" alt="" class="img-responsive">
                                 {% endif %}
                                 <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                     <h5 class="card-title">{{ post.title }}</h5></a>
