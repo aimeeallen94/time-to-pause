@@ -13,7 +13,11 @@
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                <img src="{% static 'images/default-blog-post.jpg' %}" class="scale img-responsive" alt="placeholder">
+                {% if "placeholder" in post.featured_image.url  %}
+                <img src="https://images.pexels.com/photos/355209/pexels-photo-355209.jpeg" alt="" class="card-img-top">
+                {% else %}
+                <img src="{{ post.featured_image.url }}" alt="" class="scale img-responsive">
+                {% endif %}
             </div>
         </div>
     </div>

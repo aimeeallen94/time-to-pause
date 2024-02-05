@@ -9,6 +9,20 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 
 ## Features 
 
+### Navbar
+- Fully responsive navbar with links to: Home, About, Blog, Log In and Sign Up.
+- This navbar displays on all pages across the blog.
+- Navbar adapts if user is signed in or not.
+    * Displays a Sign Up and Log In tab if user is not signed in.
+    ![Not-Signed-In](static/images/visitor.png)
+
+    * Displays a Log Out Tab if user is signed in. 
+    ![Signed-In](static/images/signed-in.png)
+
+## Footer
+- Responsive navbar with links to social media websites: Instagram, X and Facebook to encourage visitors to the site to stay in contact with the blog by following it on social media.
+- This appears on all pages across the blog. 
+
 ## Setting Up Django Workspace
 
 - I used the Django Blog Cheat Sheet from the 'I Think Therefore I Blog' course content in order to set up my workspace for use with Django and supporting libraries. 

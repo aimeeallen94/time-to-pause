@@ -5,14 +5,6 @@ body {
     color: #554640;
 }
 
-img {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
 .card-img-top {
     width: 40%;
@@ -25,11 +17,28 @@ img {
     text-align: center;
 }
 
-.nav-link {
+.nav-link, .nav-link:hover {
     text-decoration: none;
+    color: inherit;
+}
+
+.about-link, .about-link:hover {
+    text-decoration: underline;
     color: inherit;
 }
 
 .footer-text {
     text-align: center;
+}
+
+.testimonials-header {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+    
 }
