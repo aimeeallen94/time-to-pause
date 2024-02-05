@@ -18,28 +18,30 @@
     <title>Time to Pause Blog</title>
 </head>
 <body>
-    <h1 class="homepage-heading"><a class="nav-link" href="{% url 'home' %}">Time to Pause Blog</a></h1>
-    <ul class="nav nav-tabs justify-content-md-end justify-content-sm-center">
-        <li class="nav-item">
-           <a class="nav-link" href="{% url 'home' %}">Home</a></li>
-        <li class="nav-item">
-        <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
-              href="{% url 'about' %}">About</a></li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'post_list' %}">Blog</a></li>
-        {% if user.is_authenticated %}
-        <li class="nav-item">
-            <a class="nav-link {% if request.path == logout_url %}active{%endif%}" aria-current="page"
-                        href="{% url 'account_logout' %}">Log Out</a></li>
-        {% else %}
-        <li class="nav-item">
-            <a class="nav-link {% if request.path == signup_url %}active{%endif%}" aria-current="page"
-                    href="{% url 'account_signup' %}">Sign Up</a></li>                    
-        <li class="nav-item">
-            <a class="nav-link {% if request.path == login_url %}active{%endif%}" aria-current="page"
-                  href="{% url 'account_login' %}">Log In</a></li>
-        {% endif %}
-    </ul>
+    <header>
+        <h1 class="homepage-heading"><a class="nav-link" href="{% url 'home' %}">Time to Pause Blog</a></h1>
+        <ul class="nav nav-tabs justify-content-md-end justify-content-sm-center">
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home</a></li>
+            <li class="nav-item">
+            <a class="nav-link {% if request.path == about_url %}active{%endif%}" aria-current="page"
+                  href="{% url 'about' %}">About</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'post_list' %}">Blog</a></li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == logout_url %}active{%endif%}" aria-current="page"
+                    href="{% url 'account_logout' %}">Log Out</a></li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == signup_url %}active{%endif%}" aria-current="page"
+                        href="{% url 'account_signup' %}">Sign Up</a></li>                    
+            <li class="nav-item">
+                <a class="nav-link {% if request.path == login_url %}active{%endif%}" aria-current="page"
+                      href="{% url 'account_login' %}">Log In</a></li>
+            {% endif %}
+        </ul>
+    </header>
 
     <!-- Displaying Django Message -->
     <div class="container">

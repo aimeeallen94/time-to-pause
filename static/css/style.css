@@ -5,12 +5,19 @@ body {
     color: #554640;
 }
 
+header, footer {
+    background-color: #E4DAC9;
+}
+.homepage-image {
+    border-radius: 4px;
+}
+
 .placeholder-image-post-list {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    max-height: 100%;
+    max-width: 50%;
+    max-height: 288px;
 }
 
 .image-container {
@@ -31,7 +38,8 @@ body {
 
 .about-link, .about-link:hover, 
 .hyperlink, .hyperlink:hover, 
-.post-link:hover, .page-link
+.post-link:hover, .page-link, 
+.login-link
  {
     text-decoration: underline;
     color: inherit;
@@ -45,12 +53,39 @@ body {
     font-size: 150%;
 }
 
+.mindful-prompt-container {
+    max-height: 300px;
+    max-width: 200px;
+    object-fit: contain;
+}
+
+.learn-div {
+    padding-top: 15px;
+}
+
+.about-header {
+    text-align: center;
+    font-weight: bold; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.guided-meditation-header {
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.blog-post-card {
+    padding: 15px;
+}
+
 footer {
     padding: 10px;
 }
 
 .testimonials-header {
     text-align: center;
+    font-weight: bold;
     padding: 10px;
 }
 
@@ -77,6 +112,14 @@ footer {
 
 .blog-list-real-image {
     max-height: 100%;
+}
+
+.sign-out-form {
+    padding-bottom: 10px;
+}
+
+.likes, .comments-count {
+    letter-spacing: 5px;
 }
 
 @media (max-width: 995px) {
