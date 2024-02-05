@@ -7,26 +7,26 @@
         <div class="col-12">
             <div class="row">
                 {% for post in object_list %}
-                <div class="col-6">
-                    <div class="card">
+                <div class="col-md-6">
+                    <div class="card h-100">
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url  %}
-                                <img src="https://images.pexels.com/photos/355209/pexels-photo-355209.jpeg" alt="" class="card-img-top">
+                                <img src="https://images.pexels.com/photos/355209/pexels-photo-355209.jpeg" alt="" 
+                                class="scale img-fluid placeholder-image-post-list">
                                 {% else %}
-                                <img src="{{ post.featured_image.url }}" alt="" class="scale img-responsive">
+                                <img src="{{ post.featured_image.url }}" alt="" class="scale img-fluid">
                                 {% endif %}
                                 <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                    <h5 class="card-title">{{ post.title }}</h5></a>
+                                    <h5 class="card-title blog-post-list-title">{{ post.title }}</h5></a>
                                     <p class="card-text">{{ post.excerpt }}</p>     
                                 <div class="post-info">
                                     <p class="card-text"><small class="class-muted">By: {{ post.author }}</small></p>       
-                                    <p class="card-text">{{ post.created_on }}</p>
-                                    <p class="card-text"><i class="fas fa-heart"></i>{{ post.number_of_likes }}</p>
+                                    <p class="card-text">{{ post.created_on }}</p>                                        <p class="card-text"><i class="fas fa-heart"></i>{{ post.number_of_likes }}</p>
                                 </div>    
                             </div>    
                         </div>
-                    </div>  
+                    </div>
                 </div>  
                 {% if forloop.counter|divisibleby:2 %}
             </div>

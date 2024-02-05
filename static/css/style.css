@@ -5,10 +5,16 @@ body {
     color: #554640;
 }
 
+.placeholder-image-post-list {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 100%;
+}
 
-.card-img-top {
-    width: 40%;
-    height: 50%;
+.image-container {
+    text-align: center;
 }
 
 .homepage-heading {
@@ -17,18 +23,31 @@ body {
     text-align: center;
 }
 
-.nav-link, .nav-link:hover {
+.nav-link, .nav-link:hover, 
+.post-link {
     text-decoration: none;
     color: inherit;
 }
 
-.about-link, .about-link:hover {
+.about-link, .about-link:hover, 
+.hyperlink, .hyperlink:hover, 
+.post-link:hover
+ {
     text-decoration: underline;
     color: inherit;
 }
 
+
+.homepage-quote {
+    font-size: 160%;
+}
 .footer-text {
     text-align: center;
+    font-size: 150%;
+}
+
+footer {
+    padding: 10px;
 }
 
 .testimonials-header {
@@ -36,9 +55,63 @@ body {
     padding: 10px;
 }
 
+.card-title-testimonial {
+    padding: 5px;
+}
+
+.card-body-meditation {
+    padding-left: 10px;
+}
+
+.btn-signup {
+    background-color: #F0EAE0;
+    border: 1px solid #554640;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.blog-post-list-title {
+    padding-top: 10px;
+}
+
+.blog-list-real-image {
+    max-height: 100%;
+}
+
+@media (max-width: 995px) {
+    .blog-post{
+        width: 100%;
+    }
+
+    .blog-list-image {
+        width: 100%;   
+    }
+}
+
 @media (max-width: 768px) {
     body {
         font-size: 75%;
     }
     
+    .about-prompt-homepage {
+        font-size: 150%;
+    }
+    
+    
+}
+
+@media (max-width: 450px) {
+    .nav-item {
+        font-size: 90%;
+    }
+
+    .about-heading {
+        font-size: 250%;
+    }
+
+    .about-quote {
+        font-size: 140%;
+    }
 }

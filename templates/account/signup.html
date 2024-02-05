@@ -7,17 +7,18 @@
 {% block content %}
   <div class="container">
     <div class="row">
-      <div class="col-md-8 mt-3 offset-md-2">
+      <div class="col-md-10 mt-3 offset-md-1">
         <h3>{% trans "Sign Up" %}</h3>
-        <p>Welcome and thank you for taking the time to visit this blog. PLease feel free to sign up if you would like to join
+        <p>Welcome and thank you for taking the time to visit this blog. Please feel free to sign up if you would like to join
            our mindfulness community and so that you can comment and like our blog posts as well as much more benefits!
         </p>
-        <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="hyperlink">sign in</a>
+          .{% endblocktrans %}</p>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-8 mt-3 offset-md-2">
+      <div class="col-md-10 mt-3 offset-md-1">
         <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}
           {{ form.as_p }}
@@ -29,5 +30,6 @@
       </div>
     </div>
 </div>
+<hr>
 
 {% endblock content %}

@@ -4,29 +4,27 @@
 {% block content %}
 
     <main>
-        <h1>{{ about.name }}</h1>
-        <div><h3>A favourite quote of mine is.. </h3> {{ about.favourite_quote | safe }}</div>
+        <div class="col-md-10 offset-md-1"><h1 class="about-heading">{{ about.name }}</h1></div>
+        <div class="col-md-10 offset-md-1"><h3 class="about">A favourite quote of mine is.. </h3> {{ about.favourite_quote | safe }}</div>
         <hr>
-        <div><h3>My Story: </h3> {{ about.my_story | safe }}</div>
+        <div class="col-md-10 offset-md-1"><h3>My Story: </h3> {{ about.my_story | safe }}</div>
         <hr>
-        <div><h3>Why I started this blog </h3> {{ about.why_i_started | safe }}</div>
-        <div>{{ about.date_created }}</div>
+        <div class="col-md-10 offset-md-1"><h3>Why I started this blog </h3> {{ about.why_i_started | safe }}</div>
+        <div class="col-md-10 offset-md-1">{{ about.date_created }}</div>
         <hr>
 
-        <div class="row">
-            <div class="col-12">
-                <h4>Would you like to learn more about mindfulness?</h4>
-                <p>At the Time to Pause Blog we feel very grateful to now be running mindfulness classes in response to such an
-                    interest in Mindfulness and a desire for our members to learn more.
-                    If this appeals to you also please fill out the form below to register your interest in attending the next
-                    mindfulness classes that we run. Please feel free to share times that would suit best for you whether it be 
-                    evenings, Saturdays, Sundays or if you would rather attend in person or online also.
-                    We will gather all requests and set up classes based on these requests.
-                </p>
-            </div>
+        <div class="col-md-10 offset-md-1">
+            <h4>Would you like to learn more about mindfulness?</h4>
+            <p>At the Time to Pause Blog we feel very grateful to now be running mindfulness classes in response to such an
+                interest in Mindfulness and a desire for our members to learn more.
+                If this appeals to you also please fill out the form below to register your interest in attending the next
+                mindfulness classes that we run. Please feel free to share times that would suit best for you whether it be 
+                evenings, Saturdays, Sundays or if you would rather attend in person or online also.
+                We will gather all requests and set up classes based on these requests.</p>
         </div>
-        <!-- Registering Interest Form -->
-        <div class="col-md-4 card mb-4 mt-3">
+       
+        <!-- Registering Interest Form --->
+        <div class="col-md-10 offset-md-1">
             <div class="card-body">
                 <h5>Register Your Interest In Attending Our Next Mindfulness Classes</h5>
                 <form method="post">
