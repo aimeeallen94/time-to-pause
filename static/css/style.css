@@ -31,12 +31,11 @@ body {
 
 .about-link, .about-link:hover, 
 .hyperlink, .hyperlink:hover, 
-.post-link:hover
+.post-link:hover, .page-link
  {
     text-decoration: underline;
     color: inherit;
 }
-
 
 .homepage-quote {
     font-size: 160%;
