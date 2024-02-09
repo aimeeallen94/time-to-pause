@@ -19,11 +19,11 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
     * Displays a Log Out Tab if user is signed in. 
     ![Signed-In](static/images/signed-in.png)
 
-## Footer
+### Footer
 - Responsive navbar with links to social media websites: Instagram, X and Facebook to encourage visitors to the site to stay in contact with the blog by following it on social media.
 - This appears on all pages across the blog. 
 
-## Home Page
+### Home Page
 - The home page welcomes users to the website and sets the tone for the overall website of a calm, open and warm website for all users.
 - There is two large images on this page to set the overall vibe of the webpage and the mindful tone that will remain throught the blog. 
 - There is a link here to bring users to the 'About' page to invite users to learn more about the Time to Pause Blog. 
@@ -31,27 +31,31 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 - Below this there is a Member Testimonials Section consisting of two cards that display headings and content of feedback from users. 
 - The styling of this page is matched to that of the navbar and footer which is maintained consistent throughout the blog.
 
-## About Page
+### About Page
 - The about page consists of a header content as well as a quote to welcome users to the page.
 - There is a block of text content for 'My Story' and a picture below of a girl further reinforcing the mindful tone of the page.
 - There is another block of text content for 'Why I started this blog' which explains to visitors to the page to explain more about the blog and to allow users to decide if this blog is resonating with them.
 - At the bottom of the about page there is a form inviting users to complete it if they are interested in attending Mindfulness Classes. 
     - Users are asked to fill in their name, email address and availability of when they would like to attend.
+    - This form contains necessary validation and will not let a user proceed unless an email in the correct format is entered.
     - When this is completed by a user it is visbile to the admin logged in on the admin page and so this can be actioned from there. 
 
-## Blog
+### Blog
 - The blog page is set up using Bootsraps cards with two cards per row and four cards per page. 
 - Each card contains an image for the specific blog post or a default image if none is uploaded with the blog post, the title of the blog post, an excerpt from the blog post, who the blog post is written by, when the blog post was wrote and how many likes the blog post has received also.
 - The title of the blog can be clicked by the user to bring them to the full blog so they can read all the content of the blog post.
 - In the full blog post users that have an account can like and comment under the blog posts. Users will be prompted to log in or sign up if they have not already done so.
-- Users also have the option here to edit or delete any comments that they have already left under a blog post.
+- Once a comment is posted by a member these have to be approved by the admin before they display to all site users so a comment only visible to the member who placed the comment will appear stating 'Your comment is awaiting approval'. This will disappear once the comment is approved by the admin. 
+- Users with an account also have the option here to edit or delete any comments that they have already left under a blog post.
+- If a user who is logged in selects the option to delete a comment a modal pop up appears to ask the user if they are sure they want to delete the comment so as to prevent content being deleted that shouldn't be.
 - If a user hasn't an account they can still read the comments under a blog post and see the like count also.
 
-## Sign Up
+### Sign Up
 - The sign up page consists of a form from the Django framework that invites visitors to the website to create an account with Time To Pause Blog so they can join the mindfulness community and enable the benefits of being able to like and comment under blog posts as well as being able to edit and delete their own comments. 
 - Users are asked to enter their desired username, email address and to create and re-enter a password.
+- This form consists of the necessary validation that will not allow two users to have the same username, an email to be used that is in the incorrect format and all necessary password requirements in relation the length, password too similar to usernname and longer than 8 characters.
 
-## Log In 
+### Log In 
 - The log in page asks members to enter their username and password to log in to allow users to make use of the blogs full user functionality.
 
 ## Setting Up Django Workspace
@@ -78,3 +82,36 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 - Here I also created a file called Procfile. I added the following code to the Procfile web: gunicorn (timetopause).wsgi.
 - I saved all my files. In the terminal I added my files to GitHub using git add ., git commit -m 'Deployment commit' and git push.
 - From here I returned to my project in Heroku, I selected the Deploy tab, in the 'Deployment Method' I selected GitHub. In the textbox that appeared I entered my apps name as it appeared on GitHub confirmed it was the correct project. I scrolled down to the 'Manual Deploy' option and selected 'Deploy Branch'. I wacthed my build logs from here and selected to open the app once it was complete. 
+
+## Features to be Implemented
+Features I would like to implement as a long term goal to further enhance user experience would be:
+- Search functionality so that site visitors and members can search for posts containing a specific keyword.
+- Further search functionality to allow users to click an an author of a blog post and as a result all posts written by that author would then be displayed to the user.
+
+## Credits
+### Content
+The content for this website was sourced from the below sites:
+- The content for the blog posts was taken from [London Mindful Blog](https://londonmindful.com/)
+- The guided mediation from the home page was taken from [Positive Psychology](Positivepsychology.com)
+
+### Media
+- Images:
+    - Images for blog posts were taken with their corresponding blog post from [London Mindful Blog](https://londonmindful.com/)
+    - The first image on the homepage was taken from [Pexels](https://www.pexels.com/)
+    - The second image on the homepage was taken from [Lifestyle Asia](https://www.lifestyleasia.com/sg/beauty-grooming/wellness/meditation-for-beginners-what-to-know-before-taking-the-spiritual-plunge/)
+    - The first image on the about page was taken from [Mindful.org](https://www.mindful.org/a-meditation-for-decentering-your-self-and-why-you-should-do-it/)
+    - The second image on the about page was taken from a journal cover being sold on [Amazon](https://www.amazon.com/Guided-Gratitude-Journal-Women-Inspirational/dp/B09S1YJCVW)
+
+- Icons:
+    - The icons for this website were sourced from [Font Awesome](https://fontawesome.com/v5/search)
+
+- Font:
+    - The font for this webpage is Josefin Sans and was taken from [Google Fonts](https://fonts.google.com/)
+
+- Data Storing: 
+    - [Elephant SQL](https://www.elephantsql.com/) was the database management system used
+    - [Cloudinary](https://cloudinary.com/?&utm_campaign=1329&utm_content=instapagelogocta-selfservetest) was used for storing image files in the cloud
+
+- Libraries and Frameworks 
+    - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) was used to assist with the CSS styling
+    - [Django](https://www.djangoproject.com/) was the web framework used
