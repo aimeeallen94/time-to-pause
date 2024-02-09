@@ -23,6 +23,37 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 - Responsive navbar with links to social media websites: Instagram, X and Facebook to encourage visitors to the site to stay in contact with the blog by following it on social media.
 - This appears on all pages across the blog. 
 
+## Home Page
+- The home page welcomes users to the website and sets the tone for the overall website of a calm, open and warm website for all users.
+- There is two large images on this page to set the overall vibe of the webpage and the mindful tone that will remain throught the blog. 
+- There is a link here to bring users to the 'About' page to invite users to learn more about the Time to Pause Blog. 
+- There is a section here also with an unordered list to invite users to take a few moments to engage in a guided meditation. 
+- Below this there is a Member Testimonials Section consisting of two cards that display headings and content of feedback from users. 
+- The styling of this page is matched to that of the navbar and footer which is maintained consistent throughout the blog.
+
+## About Page
+- The about page consists of a header content as well as a quote to welcome users to the page.
+- There is a block of text content for 'My Story' and a picture below of a girl further reinforcing the mindful tone of the page.
+- There is another block of text content for 'Why I started this blog' which explains to visitors to the page to explain more about the blog and to allow users to decide if this blog is resonating with them.
+- At the bottom of the about page there is a form inviting users to complete it if they are interested in attending Mindfulness Classes. 
+    - Users are asked to fill in their name, email address and availability of when they would like to attend.
+    - When this is completed by a user it is visbile to the admin logged in on the admin page and so this can be actioned from there. 
+
+## Blog
+- The blog page is set up using Bootsraps cards with two cards per row and four cards per page. 
+- Each card contains an image for the specific blog post or a default image if none is uploaded with the blog post, the title of the blog post, an excerpt from the blog post, who the blog post is written by, when the blog post was wrote and how many likes the blog post has received also.
+- The title of the blog can be clicked by the user to bring them to the full blog so they can read all the content of the blog post.
+- In the full blog post users that have an account can like and comment under the blog posts. Users will be prompted to log in or sign up if they have not already done so.
+- Users also have the option here to edit or delete any comments that they have already left under a blog post.
+- If a user hasn't an account they can still read the comments under a blog post and see the like count also.
+
+## Sign Up
+- The sign up page consists of a form from the Django framework that invites visitors to the website to create an account with Time To Pause Blog so they can join the mindfulness community and enable the benefits of being able to like and comment under blog posts as well as being able to edit and delete their own comments. 
+- Users are asked to enter their desired username, email address and to create and re-enter a password.
+
+## Log In 
+- The log in page asks members to enter their username and password to log in to allow users to make use of the blogs full user functionality.
+
 ## Setting Up Django Workspace
 
 - I used the Django Blog Cheat Sheet from the 'I Think Therefore I Blog' course content in order to set up my workspace for use with Django and supporting libraries. 
