@@ -1,4 +1,6 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} 
+
+{% block content %}
 
 <div class="container">
     <div class="row">
@@ -12,7 +14,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url  %}
-                                <img src="https://images.pexels.com/photos/355209/pexels-photo-355209.jpeg" alt="" 
+                                <img src="https://wp.londonmindful.com/wp-content/uploads/2023/05/2.png" alt="" 
                                 class="scale img-fluid placeholder-image-post-list">
                                 {% else %}
                                 <img src="{{ post.featured_image.url }}" alt="" class="scale img-fluid">

@@ -88,6 +88,8 @@ Features I would like to implement as a long term goal to further enhance user e
 - Search functionality so that site visitors and members can search for posts containing a specific keyword.
 - Further search functionality to allow users to click an an author of a blog post and as a result all posts written by that author would then be displayed to the user.
 
+## Testing
+
 ## Credits
 ### Content
 The content for this website was sourced from the below sites:
@@ -96,7 +98,8 @@ The content for this website was sourced from the below sites:
 
 ### Media
 - Images:
-    - Images for blog posts were taken with their corresponding blog post from [London Mindful Blog](https://londonmindful.com/)
+    - Images for blog posts were taken with their corresponding blog post from [The Mindfulness Project](https://londonmindful.com/)
+    - The placeholder image for the blog posts to be used when no image is inserted by the author is from [The Mindfulness Project](https://www.londonmindful.com/)
     - The first image on the homepage was taken from [Pexels](https://www.pexels.com/)
     - The second image on the homepage was taken from [Lifestyle Asia](https://www.lifestyleasia.com/sg/beauty-grooming/wellness/meditation-for-beginners-what-to-know-before-taking-the-spiritual-plunge/)
     - The first image on the about page was taken from [Mindful.org](https://www.mindful.org/a-meditation-for-decentering-your-self-and-why-you-should-do-it/)

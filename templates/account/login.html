@@ -22,7 +22,7 @@
               here and let your journey begin <i class="far fa-heart"></i> {% endblocktrans %} </p>
         </div>
     </div>
-    <div class="row">
+    <div class="row login-in-form">
         <div class="col-md-10 mt-3 offset-md-1">
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
@@ -35,5 +35,4 @@
         </div>
     </div>
 </div>
-<hr>
 {% endblock %}
