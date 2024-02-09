@@ -14,8 +14,8 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url  %}
-                                <img src="{% static 'images/placeholder-image.png'%}" alt="" 
-                                class="scale img-fluid placeholder-image-post-list">
+                                <img class="scale img-fluid placeholder-image-post-list" 
+                                src="https://wp.londonmindful.com/wp-content/uploads/2023/05/2.png" alt="">
                                 {% else %}
                                 <img src="{{ post.featured_image.url }}" alt="" class="scale img-fluid">
                                 {% endif %}
