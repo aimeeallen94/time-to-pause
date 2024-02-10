@@ -43,11 +43,11 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 - At the bottom of the about page there is a form inviting users to complete it if they are interested in attending Mindfulness Classes. 
     - Users are asked to fill in their name, email address and availability of when they would like to attend.
     - This form contains necessary validation and will not let a user proceed unless an email in the correct format is entered.
-    - When this is completed by a user it is visbile to the admin logged in on the admin page and so this can be actioned from there. 
+    - When this is completed by a user it is visible to the admin logged in on the admin page and so this can be actioned from there. 
 ![Mindfulness-Classes-Form](static/images/mindful-classes-form.png)
 
 ### Blog
-- The blog page is set up using Bootsraps cards with two cards per row and four cards per page. 
+- The blog page is set up using Bootstraps cards with two cards per row and four cards per page. 
 ![Blog-List](static/images/blog-list.png)
 - Each card contains an image for the specific blog post or a default image if none is uploaded with the blog post, the title of the blog post, an excerpt from the blog post, who the blog post is written by, when the blog post was wrote and how many likes the blog post has received also.
 - The title of the blog can be clicked by the user to bring them to the full blog so they can read all the content of the blog post.
@@ -87,10 +87,10 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 - I added my app name to the ALLOWED_HOSTS list in the settings.py file.
 - Next, I used ElephantSQL to create an extrernal database to support my app. I have an account already with Elephant SQL so I logged into my account. I selected the 'Create New Instance Button' at the top right hand corner of the screen. From here I entered my app name, selected a plan on which I would like this datebase to run and I clicked on the 'Select Region' button at the bottom of the screen. On this page I checked that the region already selected was correct for me and once I had that confirmed I clicked on the 'Review' button at the end of the page. I reviewed the details of my database here and once I was happy with that I selected the button "Create Instance".
 - Once I had this database connected I was returned to my dashboard, from here I clicked on the app I had just created which brought me to my app details. I copied the URL name here. 
-- I now logged onto my Heorku account and navigated to the dashboard here. I selected the "New" button on the top right hand corner of the screen and selected "Create New App" from the list of options. From here I entered a name for my app and selected the correct region. I selected "Create App" from here.
-- Once I had the app created and was returned to the homepage I selected the app I had just created and then clicked on the "Settings" tab from the app homepage. From here I selected to "Reveal Congif Vars". Here I added a Config Var with the Key of DATABASE_URL and the value of the URL name I had copied from the database I had created in Elephant SQL. I selcted "Add" when both fields had been entered.
+- I now logged onto my Heroku account and navigated to the dashboard here. I selected the "New" button on the top right hand corner of the screen and selected "Create New App" from the list of options. From here I entered a name for my app and selected the correct region. I selected "Create App" from here.
+- Once I had the app created and was returned to the homepage I selected the app I had just created and then clicked on the "Settings" tab from the app homepage. From here I selected to "Reveal Config Vars". Here I added a Config Var with the Key of DATABASE_URL and the value of the URL name I had copied from the database I had created in Elephant SQL. I selcted "Add" when both fields had been entered.
 - Back in my Gitpod workspace for the app I created an env.py file in the top level directory. Here I imported os and added the database url and created a secret key for the project.
-- I once again returned to Heorku and clicked into the Settings tab of my project and again revealed config vars and added a new Key of SECRET_KEY and a value of the secret key that I created for the project.
+- I once again returned to Heroku and clicked into the Settings tab of my project and again revealed config vars and added a new Key of SECRET_KEY and a value of the secret key that I created for the project.
 - In Gitpod I opened my settings.py file and using code imported os and dj database url. Here I also changed the code for the SECRET_KEY and set it to get the secret key value from where it was set. I also commented out the old code for the DATABASE value and added in code to point to my new database url that was specified.
 - I saved all files and in the termnial I made migrations using the code python3 manage.py migrate.
 - I have an account set up with Cloudinary also. This site is used to host images and media from the app to ensure they are always available. I logged into my Cloudinary account and from the dashboard I copied the API Environment Variable. 

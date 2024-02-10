@@ -14,10 +14,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url  %}
-                                <img class="scale img-fluid placeholder-image-post-list" 
+                                <img class="scale img-fluid placeholder-image-post-list post-list-image" 
                                 src="https://wp.londonmindful.com/wp-content/uploads/2023/05/2.png" alt="">
                                 {% else %}
-                                <img src="{{ post.featured_image.url }}" alt="" class="scale img-fluid">
+                                <img src="{{ post.featured_image.url }}" alt="" class="scale img-fluid post-list-image">
                                 {% endif %}
                                 <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                     <h5 class="card-title blog-post-list-title">{{ post.title }}</h5></a>

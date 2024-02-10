@@ -81,6 +81,10 @@ header, footer {
     padding: 15px;
 }
 
+.post-list-image {
+    border-radius: 5px;
+}
+
 footer {
     padding: 10px;
 }
