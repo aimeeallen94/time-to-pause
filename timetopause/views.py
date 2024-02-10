@@ -82,7 +82,7 @@ def delete_comment(request, slug, comment_id):
             comment.delete()
             messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
         else:
-            messages.add_message(request, message.ERROR, 'You can only delete a comment you wrote.')
+            messages.add_message(request, messages.ERROR, 'You can only delete a comment you wrote.')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
@@ -94,7 +94,9 @@ class PostLike(View):
 
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
+            messages.add_message(request, messages.ERROR, 'You have just unliked this post.')
         else:
             post.likes.add(request.user)
+            messages.add_message( request, messages.SUCCESS, 'You have liked this post')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))

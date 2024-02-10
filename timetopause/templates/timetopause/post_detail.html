@@ -41,21 +41,21 @@
     <!-- Displaying like button and count -->
     <div class="row">
         <div class="col-12">
-            <strong>
-                {% if user.is_authenticated %}
+            {% if user.is_authenticated %}
         
                 {% else %}
-                Please <a href="{% url 'account_login' %}" class="login-link">log in</a> if you would like this post.
+                Please <a href="{% url 'account_login' %}" class="login-link">log in</a> if you would like to interact with 
+                this post.
                 {% endif %}
+                <br>
+            <strong>
                 {% if user.is_authenticated %}
                 <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                     {% csrf_token %}
                     {% if liked %}
-                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="text-secondary" id="like-button">
-                        <i class="fas fa-heart"></i></button>    
+                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="text-secondary" id="like-button"><i class="fas fa-heart"></i></button>    
                     {% else %}
-                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="text-secondary" id="like-button">
-                        <i class="far fa-heart"></i></button> 
+                    <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="text-secondary" id="like-button"><i class="far fa-heart"></i></button> 
                     {% endif %}
                 </form>
                 {% else %}

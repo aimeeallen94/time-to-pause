@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-aimeeallen9-timetopause-r5xakyy5lv6.ws-eu107.gitpod.io', 'https://timetopause-4c93f0a77919.herokuapp.com/'
-, 'https://8000-aimeeallen9-timetopause-r5xakyy5lv6.ws-eu108.gitpod.io']
+, 'https://8000-aimeeallen9-timetopause-r5xakyy5lv6.ws-eu108.gitpod.io', 'https://8000-aimeeallen9-timetopause-c14i5neugxo.ws-eu108.gitpod.io']
 
 ALLOWED_HOSTS = ['8000-aimeeallen9-timetopause-r5xakyy5lv6.ws-eu107.gitpod.io', 'time_to_pause_blog', 
 'timetopause-4c93f0a77919.herokuapp.com', '8000-aimeeallen9-timetopause-r5xakyy5lv6.ws-eu108.gitpod.io', 
