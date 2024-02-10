@@ -141,11 +141,34 @@ Features I would like to implement as a long term goal to further enhance user e
 ### Manual Testing
 - All manual testing was done with DEBUG = Falsen in the settings.py file.
 
-| Component |  Test.    | Expected Result | Actual Result |
-|-----------|-----------|-----------------|---------------|
-|           |           |                 |               |
-|           |           |                 |               |
-|           |           |                 |               |
+|        Component     |       Test       |     Expected Result.      |           Actual Result         |
+|----------------------|------------------|---------------------------|---------------------------------|
+| Home page display as expected | Click on Home | Home page displayed | Home page displayed with expected formatting and images |
+| About page link working | Selected About link | About page to display | About page displayed |
+| About page displays | Click on About | About page to display as expected | About page displayed with expected formatting and images |
+| Form to register interest | Fill in all form fields | Alert renders on admin about page | Alert appeared on admin and about page |
+| Form fields | Skip completing form fields | Alert to please fill in field  | Alert appeared to fill in field |
+| Email form field | Fill in email in incorrect format | Alert to include @ in email | Alert appeared to include @ for email |
+| Blog list display | Click on Blog | List of blog posts appears as 4 per page | List of blog post displayed as 4 per page |
+| Next and Prev Buttons | Work as expected | Next brings to next page, prev brings to previous | Next brought to next page, previious brought to previous list of blog posts |
+| Full blog post display | On click of blog title in blog list full blog display | Full blog post displays | Full blog post displayed |
+| Like Button | Click and Unclick Like | Notifies user of like and unlike | User notified of like and unlike and counter goes up |
+| Log in Prompt | To display when not log in | Message display in like and comment to prompt a log in | Messaged displayed to visitor to log in to interact with post |
+| Like Log in Prompt Link Working | Link to sign in page working | User brought to sign in page when clicked | User is brought to log in page when link |
+| Comment | Member can leave a comment | User can leave a comment and receive confirmation | Member placed comment and received notification that comment is awaiting approval |
+| Not logged in Comment | If not logged in cannot comment | Message displaying to prompt visitor to log in if they want to leave a comment | Message displayed to visitor to sign in to leave comment |
+| Comment Log in Link | Link working | On click of link user brought to sign in page | User clicked log in link and brought to log in page |
+| Edit Comment | Can only edit own comment | Only users own comment can be edited | User could only edit their comment and receive an alert to state they did so |
+| Delete Comment | Users can delete own comments | Users can delete comment once confirmation received | User could delete a comment they left once confirming they were happy to do so |
+| Sign Up Form | Working as expected | New user created as a result | All fields of form completed and new user created |
+| Log In Link on Sign Up page | Link working | On click log in link brings to log in page | User brought to log in page once clicked |
+| Sign In Field Validation | Field Validation | Alert user if field missed | Field missed on completing form and alert received to fill in missing field |
+| Password Validation | Password | Alert raised if criteria not met | Alert raised as a result of not matching password or too similar to user name |
+| Log In Form | Allows user to sign in | User can sign in and gain full functionality of blog | User signed in successfuly when correct credentials supplied |
+| Sign Up Link on Log In Page | Link working | On click brought to sign up page | User brought to log in page once clicked |
+| Sign Out | User can sign out | Sign out successfully and asked to confirm | User could sign out once they confirmed that was their intention|
+
+ 
 
 ## Credits
 
