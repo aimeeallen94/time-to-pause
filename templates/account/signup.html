@@ -12,11 +12,13 @@
         <p>Welcome and thank you for taking the time to visit this blog. Please feel free to sign up if you would like to join
            our mindfulness community and so that you can comment and like our blog posts as well as much more benefits!
         </p>
+        <!-- Link here for members to sign in -->
         <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="hyperlink">sign in</a>
           .{% endblocktrans %}</p>
       </div>
     </div>
 
+    <!-- Sign Up Form renders here -->
     <div class="row">
       <div class="col-md-10 mt-3 offset-md-1">
         <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">

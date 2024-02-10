@@ -10,8 +10,14 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 ## Blog Plan
 - I created a blog plan to brainstorm as to why this blog would be of value to users as well as why they would return regularly to the blog.
 ![Blog-Plan](static/images/blog-plan.png)
+- As I began planning my blog and how I would go about the set up of it I planned out relationship diagrams for the post, comment and about models. 
+![Post-Relationship-Diagram](static/images/post-relationship-diagram.png)
+![Comment-Relationship-Diagram](static/images/comment-relationship-diagram.png)
+![About-Relationship-Diagram](static/images/about-relationship-diagram.png\)
+
 
 ## User Stories
+- As well as the user stories in my GitHub repository for this project I also created a few specific user stories from the point of view of users who I think would benefit from my blog.
 - User Story 1
     - As a busy Mom of three young children I would like somewhere I can go to drop into mindfulness when I have a spare minute at home but could not commit to going somewhere to attend a talk. An article or blog post would suit me better that I can read at anytime.
 
@@ -35,6 +41,7 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 ### Footer
 - Responsive navbar with a message to engage with visitors to the blog.
 - This appears on all pages across the blog to maintain the colours throughout the blog. 
+![Footer](static/images/footer.png)
 
 ### Home Page
 - The home page welcomes users to the website and sets the tone for the overall website of a calm, open and warm website for all users.
@@ -58,6 +65,8 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
     - This form contains necessary validation and will not let a user proceed unless an email in the correct format is entered.
     - When this is completed by a user it is visible to the admin logged in on the admin page and so this can be actioned from there. 
 ![Mindfulness-Classes-Form](static/images/mindful-classes-form.png)
+![Mindfulness-Class-Request-Sent](static/images/class-request-sent.png)
+![Class-Request-Admin-Panel](static/images/class-notification-admin.png)
 
 ### Blog
 - The blog page is set up using Bootstraps cards with two cards per row and four cards per page. 
@@ -89,6 +98,7 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 ### Sign Out 
 - Users can sign out when they wish to do so. Here, they are asked to confirm if they would like to do so and if they do a message is displayed at the top of the page to confirm they have signed out.
 ![Sign-Out](static/images/sign-out.png)
+
 ![Signed-Out](static/images/signed-out.png)
 
 ## Setting Up Django Workspace
@@ -116,6 +126,15 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 - I saved all my files. In the terminal I added my files to GitHub using git add ., git commit -m 'Deployment commit' and git push.
 - From here I returned to my project in Heroku, I selected the Deploy tab, in the 'Deployment Method' I selected GitHub. In the textbox that appeared I entered my apps name as it appeared on GitHub confirmed it was the correct project. I scrolled down to the 'Manual Deploy' option and selected 'Deploy Branch'. I wacthed my build logs from here and selected to open the app once it was complete. 
 
+## Deployment
+This project was deployed in the following steps: 
+- I ensured DEBUG was set to false in my settings.py file.
+- In Heroku, I opened my timetopause app, the setting and revealed config vars and I removed the variable  'DISABLE_COLLECTSTATIC with a value of 1'.
+- I pushed all changes to my project using git add . , git commit -m 'Final deployment commit', git push.
+- As my GitHub is already connected to Heroku I next selected the Deploy tag and scrolled down to the bottom and selected the repository I wanted to deploy. 
+- Next I seleceted 'Deploy Branch' and watched the build logs.
+- I selected to open my app once it was complete. 
+
 ## Features to be Implemented
 Features I would like to implement as a long term goal to further enhance user experience would be:
 - I would like to further enhance this blog page by allowing members to create their own blog posts and once approved will display on the main blog page where others can interact with. 
@@ -139,7 +158,7 @@ Features I would like to implement as a long term goal to further enhance user e
 ![Python Validation](static/images/python-validation.png)
 
 ### Manual Testing
-- All manual testing was done with DEBUG = Falsen in the settings.py file.
+- All manual testing was done with DEBUG = False in the settings.py file.
 
 |        Component     |       Test       |     Expected Result.      |           Actual Result         |
 |----------------------|------------------|---------------------------|---------------------------------|
@@ -168,9 +187,14 @@ Features I would like to implement as a long term goal to further enhance user e
 | Sign Up Link on Log In Page | Link working | On click brought to sign up page | User brought to log in page once clicked |
 | Sign Out | User can sign out | Sign out successfully and asked to confirm | User could sign out once they confirmed that was their intention|
 
- 
+## Unfixed Bugs 
+- It was my wish that when a user liked a comment under a blog post that the heart would switched from an outline of a heart to a solid heart, however I could not resolve this issue in the project. In the future when time allows I would like to implement that functionality.
+- A bug that I could not fix in the project was a css styling issue with the footer
 
 ## Credits
+
+### Reference Materials 
+- I used the [course content](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecomm) from I Think Therefore I Blog to help me set up blog and to give ideas on functionality for the blog.
 
 ### Content
 The content for this website was sourced from the below sites:

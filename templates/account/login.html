@@ -17,11 +17,13 @@
               Please rememeber to log in to be able to leave comments under blog posts, engage in conversation or 
               like a posts. 
               <hr>
+              <!-- Link here for visitors to sign up if they wish -->
               If you would like to join our blog to gain these benefits and more then please 
               <a class="link hyperlink" href="{{ signup_url }}">sign up</a>
               here and let your journey begin <i class="far fa-heart"></i> {% endblocktrans %} </p>
         </div>
     </div>
+    <!-- Log In Form renders here -->
     <div class="row login-in-form">
         <div class="col-md-10 mt-3 offset-md-1">
             <form class="login" method="POST" action="{% url 'account_login' %}">

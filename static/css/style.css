@@ -1,19 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Roboto:wght@100&display=swap');
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: Josef-Sans, Roboto, sans-serif;
     color: #554640;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-header, footer {
+header {
     background-color: #E4DAC9;
 }
+
+.footer-text {
+    text-align: center;
+    font-size: 150%;
+}
+
+footer {
+    padding: 10px;
+    background-color: #E4DAC9;
+    margin-top: auto;
+}
+
 .homepage-image, .meditative-image {
     border-radius: 5px;
 }
 
 .homepage-image-container, .about-heading {
     padding-top: 15px;
+}
+
+.homepage-heading {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.homepage-quote {
+    font-size: 160%;
 }
 
 .placeholder-image-post-list {
@@ -23,12 +52,6 @@ header, footer {
 }
 
 .image-container {
-    text-align: center;
-}
-
-.homepage-heading {
-    padding-top: 10px;
-    padding-left: 10px;
     text-align: center;
 }
 
@@ -45,14 +68,6 @@ header, footer {
  {
     text-decoration: underline;
     color: inherit;
-}
-
-.homepage-quote {
-    font-size: 160%;
-}
-.footer-text {
-    text-align: center;
-    font-size: 150%;
 }
 
 .mindful-prompt-container {
@@ -81,15 +96,6 @@ header, footer {
     padding: 15px;
 }
 
-.post-list-image {
-    border-radius: 5px;
-}
-
-footer {
-    padding: 10px;
-    width: 100%;
-}
-
 .testimonials-header {
     text-align: center;
     font-weight: bold;
@@ -104,6 +110,18 @@ footer {
     padding-left: 10px;
 }
 
+.post-list-image {
+    border-radius: 5px;
+}
+
+.blog-post-list-title {
+    padding-top: 10px;
+}
+
+.blog-list-real-image {
+    max-height: 100%;
+}
+
 .btn-signup, #submitButton, 
 .btn-edit, .btn-delete {
     color: #554640;
@@ -116,32 +134,25 @@ footer {
     border: 0.1px solid white;
 }
 
-.django-messasge-display {
-    padding-top: 10px;
+.likes, .comments-count {
+    letter-spacing: 5px;
 }
 
-.login-in-form {
-    padding-bottom: 10px;
+
+.django-messasge-display {
+    padding-top: 10px;
 }
 
 .h-100 {
     height: 100%;
 }
 
-.blog-post-list-title {
-    padding-top: 10px;
-}
-
-.blog-list-real-image {
-    max-height: 100%;
+.login-in-form {
+    padding-bottom: 10px;
 }
 
 .sign-out-form {
     padding-bottom: 10px;
-}
-
-.likes, .comments-count {
-    letter-spacing: 5px;
 }
 
 @media (max-width: 995px) {
