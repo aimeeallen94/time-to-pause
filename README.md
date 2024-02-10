@@ -124,10 +124,28 @@ Features I would like to implement as a long term goal to further enhance user e
 
 ## Testing
 
-### Validator Testing for CSS and HTML
+### Validator Testing for CSS, HTML and Javascript
 - The CSS style.css stylesheet passed through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) with no errors returned.
 ![CSS Validation](static/images/css-validation.png)
 
+- The HTML pages that I created myself all passed through the [W3 Nu HTML Checker](https://validator.w3.org/nu/) with no errors returned. There was errors found within the framework code used for the sign up, sign out and log in pages which I did not amend as these were part of a framework. All code operated as expected. 
+![HTML Validation](static/images/html-validation.png) 
+
+- The JS file was ran through [JS Hint Linter](https://jshint.com/) and no errors were found.
+![JS Validation](static/images/js-validation.png)
+
+### Python Testing
+- All Python files were passed through the [CI Python Linter](https://pep8ci.herokuapp.com/) and no errors were found.
+![Python Validation](static/images/python-validation.png)
+
+### Manual Testing
+- All manual testing was done with DEBUG = Falsen in the settings.py file.
+
+| Component |  Test.    | Expected Result | Actual Result |
+|-----------|-----------|-----------------|---------------|
+|           |           |                 |               |
+|           |           |                 |               |
+|           |           |                 |               |
 
 ## Credits
 
