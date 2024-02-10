@@ -7,6 +7,19 @@ Time to Pause Blog is a blog where people with an interest in mindfulness can co
 I created Mind Map on Ludic App for ideas of funcitonality of the blog as well as some additional add on features that I would like to include if I have sufficient time at the end of the project to implement. 
 ![Lucid-Mind-Map](static/images/lucid-map.png)
 
+## Blog Plan
+- I created a blog plan to brainstorm as to why this blog would be of value to users as well as why they would return regularly to the blog.
+![Blog-Plan](static/images/blog-plan.png)
+
+## User Stories
+- User Story 1
+    - As a busy Mom of three young children I would like somewhere I can go to drop into mindfulness when I have a spare minute at home but could not commit to going somewhere to attend a talk. An article or blog post would suit me better that I can read at anytime.
+
+- User Story 2
+    - As a shift worker my work pattern is unpredictable by nature and find it hard to commit to regularly scheduled classes, talks etc however I have recognised the need for a mindfulness practise in my life. I would like somewhere where I can log into at any time to learn more about mindfulness and can sign up to attend a class when suits me.
+- User Story 3
+    - As a young adult who has suffered with anxiety and has realised the value of mindfulness in my life and the need to stay connected to a mindfulness community as well as furthering my learning within mindfulness I would like somewhere where I can go and be my true self and fully engage in the community.
+
 ## Features 
 
 ### Navbar
@@ -17,7 +30,7 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
     ![Not-Signed-In](static/images/visitor-navbar.png)
 
     * Displays a Log Out Tab if user is signed in. 
-    ![Signed-In](static/images/comments-member.png)
+    ![Signed-In](static/images/member-navbar.png)
 
 ### Footer
 - Responsive navbar with a message to engage with visitors to the blog.
@@ -105,12 +118,19 @@ I created Mind Map on Ludic App for ideas of funcitonality of the blog as well a
 
 ## Features to be Implemented
 Features I would like to implement as a long term goal to further enhance user experience would be:
+- I would like to further enhance this blog page by allowing members to create their own blog posts and once approved will display on the main blog page where others can interact with. 
 - Search functionality so that site visitors and members can search for posts containing a specific keyword.
 - Further search functionality to allow users to click an an author of a blog post and as a result all posts written by that author would then be displayed to the user.
 
 ## Testing
 
+### Validator Testing for CSS and HTML
+- The CSS style.css stylesheet passed through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) with no errors returned.
+![CSS Validation](static/images/css-validation.png)
+
+
 ## Credits
+
 ### Content
 The content for this website was sourced from the below sites:
 - The content for the blog posts was taken from [London Mindful Blog](https://londonmindful.com/)
