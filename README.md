@@ -189,7 +189,12 @@ Features I would like to implement as a long term goal to further enhance user e
 
 ## Unfixed Bugs 
 - It was my wish that when a user liked a comment under a blog post that the heart would switched from an outline of a heart to a solid heart, however I could not resolve this issue in the project. In the future when time allows I would like to implement that functionality.
-- A bug that I could not fix in the project was a css styling issue with the footer
+
+## Fixed Bugs 
+- I was having difficulty positioning my footer. For the pages where there wasn't a lot of content the footer was appearing half way up the page with whitespace below and yet appearing correctly at the end of the longer pages. I attempted to fixed this using position: absolute; in css but this resulted in my footer being in the middle of my longer content pages and making the main content space much smaller.
+- I used Flex to resolve this issue and now my footer is appearing at the end of all pages in the blog.
+![Unfixed-Footer](static/images/unfixed-footer.png)
+![Fixed-Footer](static/images/fixed-footer.png)
 
 ## Credits
 
